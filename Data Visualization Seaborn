@@ -4,3 +4,8 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 import seaborn as sns
 print("Setup Complete")
+# Path of the file to read
+fifa_filepath = "/Users/amalalsafadi/Desktop/fifa.csv"
+
+# Read the file into a variable spotify_data
+fifa_data = pd.read_csv(fifa_filepath, index_col="Date", parse_dates=True)
